@@ -346,7 +346,7 @@ opacity: 1
 {
 	font-weight: 600;
 	font-family: 'open sans', sans-serif;
-	background-color:#ffde58;
+	background-color:#FFFFBB;
 	padding: 1em;
 	text-align: center;
 	height: 350px;
@@ -1853,7 +1853,7 @@ opacity: 1
 	}
 
 	header.major {
-		margin: 0 0 3.5em 0;
+		margin: 0 0 0em 0;  /*changed this from 3.5em to 0em for the roots*/
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -1877,7 +1877,7 @@ opacity: 1
 		@media screen and (max-width: 736px) {
 
 			header.major {
-				margin: 0 0 2em 0;
+				margin: 0 0 0em 0; /*changed this from 2em to 0em for the roots*/
 			}
 
 		}
@@ -2177,8 +2177,8 @@ opacity: 1
 	}
 
 		.image img {
-			border-radius: 3px;
-			display: block;
+			border-radius: 1px;
+		
 		}
 
 		.image.left {
@@ -3429,7 +3429,7 @@ opacity: 1
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #ffde58;
+		background: #FFFFBB;
 		color: black;
 		height: 100%;
 		max-width: 80%;
@@ -3688,7 +3688,7 @@ opacity: 1
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background:white;   /*this is for the lines around the title!!!*/
+				background:#FFFFBB;   /*this is for the lines around the title!!!*/
 				content: '';
 				display: block;
 				height: 2px;
