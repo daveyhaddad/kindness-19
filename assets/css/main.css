@@ -192,6 +192,8 @@ input, select, textarea {
 		}
 	}
 
+
+
 	p.about2
 	{
 		font-size: 24px;
@@ -203,6 +205,14 @@ input, select, textarea {
 
 		p.about2 {
 			font-size: 18px;
+		}
+	}
+
+
+	@media screen and (max-width: 800px) {
+
+		p.about3 {
+			font-size: 16px;
 		}
 	}
 
