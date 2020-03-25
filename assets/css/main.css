@@ -25,6 +25,21 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+	@media screen and (max-width: 750px) {
+
+		iframe {
+			height: 500px;
+		}
+	}
+
+
+	@media screen and (max-width: 500px) {
+
+		iframe {
+			height: 400px;
+		}
+	}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -161,7 +176,50 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 		font-family: 'Lora';      /*made this change*/
+		font-size: 24px;
+	}
+
+	p.about
+	{
 		font-size: 20px;
+		margin: 0 0 2em 0;
+	}
+
+	@media screen and (max-width: 800px) {
+
+		p.about {
+			font-size: 14px;
+		}
+	}
+
+	p.about2
+	{
+		font-size: 24px;
+		margin: 0 0 2em 0; 
+		color: black;
+	}
+
+	@media screen and (max-width: 800px) {
+
+		p.about2 {
+			font-size: 18px;
+		}
+	}
+
+	.pspec{
+		color: white;
+	}
+
+	p.pspec {
+		font-family: 'Lora';
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 736px)
+	{
+		p.pspec{
+			font-size: 14px;
+		}
 	}
 
 
@@ -313,51 +371,66 @@ opacity: 1
 	width: 100%;
 	display:flex;
 	background-color: white;
-	justify-content: space-between;
+	padding: 10px;
+
+	
+	flex-direction: row;
+
 	align-items: center;
-	align-content: center;
 }
 
 .flexbox-item
 {
 	
-	color: black;
-    width: 200px;
-	margin: 10px;
 	display: inline-block;
+	color: black;
+	font-size: 14px;
 }
 
 .flexbox-item-1
 {
+
+	flex:2;	 /*how much space it is taking up - ratio*/
 	font-family: 'lora', sans-serif;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	flex-shrink: 0;
-	height: 550px;
-	width: 400px;
-	min-height: 100px;
-	min-width: 300px;
-	flex-grow: 2;
 	padding-right: 1em;
-	font-size: 100%;
+	
+}
+
+p.flexbox-item-1
+{
+	color: black;
+	font-size: 14px;
 }
 
 .flexbox-item-2
 {
+	flex: 1;
 	font-weight: 600;
 	font-family: 'open sans', sans-serif;
-	background-color:#FFFFBB;
-	padding: 1em;
 	text-align: center;
-	height: 350px;
-	min-height: 200px;
-	min-width: 300px;
-	flex-grow: 1;
-	font-size: 100%;
+	background-color:#FFFFBB;
 	border: 12px solid;
 	border-color: #202a44;
-	
+	padding: 1em;
+	color: black;
+	font-size: 14px;
 }
+
+
+
+@media screen and (max-width: 750px){
+	p.flexbox-item-1{
+		font-size: 12px;
+	}
+	}
+
+
+@media screen and (max-width: 750px){
+.flexbox-container{
+	flex-direction: column;
+}
+}
+
 
 
 
@@ -849,6 +922,7 @@ opacity: 1
 						}
 
 		}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -2229,8 +2303,9 @@ opacity: 1
 		padding-left: 1em;
 	}
 
+
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0.5em;	
 		}
 
 		ul.alt {
