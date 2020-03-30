@@ -40,6 +40,20 @@ section, summary, time, mark, audio, video {
 		}
 	}
 
+p.p9{
+	font-family: "open sans", Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 11.73px;
+	height: 44px;
+	letter-spacing: 2.64px;
+}
+
+	@media screen and (max-width: 500px){
+		p.p9{
+			font-size: 10px;
+		}
+	}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -2295,6 +2309,15 @@ p.flexbox-item-1
 				width: 100%;
 			}
 
+		@media screen and (max-width: 400px){
+			img.imagus{
+				width: 100%;
+			}
+		}
+	
+
+	
+
 /* List */
 
 	ol {
@@ -2587,7 +2610,7 @@ p.flexbox-item-1
 		height: 3.125em;
 		letter-spacing: 0.225em;
 		line-height: 3.125em;
-		max-width: 30em;
+		max-width: 35em;
 		padding: 0 2.75em;
 		text-align: center;
 		text-decoration: none;
